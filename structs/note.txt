@@ -12,7 +12,10 @@ và lưu ở 1 địa chỉ khác --> jim vẫn không thay đổi
 
 - Go có thể tự biết dc input đưa vào hàm receiver là variable 
 hay là pointer của variable đó --> có thể truyền vào jim thì nó vẫn hiểu,
-ko cần jimPointer
+ko cần jimPointer --> thao tác với *p vì p là pointer
+- Khi truyền vào là jim với hàm receiver định nghĩa input đầu vào *Person thì sẽ hiểu
+là lấy pointer của jim truyền vào và lúc đó thao tác với p cũng được (không cần *p)
+--> v là thao tác thay đổi *p hay p đều cho ra kết quả như nhau là jimmy
 
 - Tuy nhiên khi dùng slice cho trường hợp thay đổi giá trị của elem bên trong thì
 vẫn hoạt động mà ko cần pointer ops
