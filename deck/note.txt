@@ -1,0 +1,32 @@
+- để chạy code trong project:
++ go build: compile
++ go run: build and run
++ go fmt: format all the code
++ go install: compile and install a package
++ go get: download packages
++ go test
+
+- Có hai loại packages: executable vs reusable (library)
+- Package mà để exe là package main và bên trong phải có hàm func main()
+
+- var name_of_variable type
+- basic Go types: bool, string, int, float64
+- Co the khai bao bien bang cach khac: card := "Ace of Spades" --> vua create, assign
+ma con ep kieu cho card la string (giong nhu "Ace of Spades")
+
+- Tat ca elem in slice phia cung chung 1 type
+- card := []string
+- add them vao slice --> append(cards, "")
+
+- Thay vi code theo OOP thi Go khong lam vay, Go se dinh nghia 1 type moi (similar with class in OOP)
+
+- Receiver functions:
++ func (d deck ) print() {}
++ d la bien
++ deck la kieu cua bien dau vao, no se call function nay (print method)
++ nhin chung thi cai receiver function nay giong nhu 1 function ben trong cua class
+
+- Index trong go cung tuong tunhu python, start tu index 0
+
+- Thu vien ioutil dung de lam viec voi local machine
+- write data to the file, the data is byte type

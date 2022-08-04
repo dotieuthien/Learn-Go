@@ -1,0 +1,26 @@
+- struct giong nhu dict trong python
+- jim := person{} --> jim được save vào 1 address trên RAM, ví dụ là 0001
+- khi chúng ta call jim.updateName("Jimmy") --> copy a person instance 
+và lưu ở 1 địa chỉ khác --> jim vẫn không thay đổi
+
+- func (pointerToPerson *person)
++ *person này có nghĩa là giá trị tại pointer của person struct
+
+- Pointer operation:
++ &variable có nghĩa là địa chỉ tới biến đó trên RAM
++ *pointer là giá trị tại pointer đó --> *pointerToPerson = "" --> change the value
+
+- Go có thể tự biết dc input đưa vào hàm receiver là variable 
+hay là pointer của variable đó --> có thể truyền vào jim thì nó vẫn hiểu,
+ko cần jimPointer
+
+- Tuy nhiên khi dùng slice cho trường hợp thay đổi giá trị của elem bên trong thì
+vẫn hoạt động mà ko cần pointer ops
++ vì slice khi được tạo ra,ở địa chỉ của slice,nó lưu địa chỉ của những phần tử
++ dù có tạo ra 1 bản copy of slice thì nó vẫn trỏ tới đó
+--> nó gọi đó là reference types
+
+- Trong Go có 2 kiểu là Value types vs Reference types
++ value types: int, float, string, bool, struct --> dùng pointer để thay đổi giá trị
+khi đưa vào func
++ ref types: slices, maps, channels, pointers, functions
