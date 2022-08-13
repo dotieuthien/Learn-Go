@@ -1,0 +1,9 @@
+- Vấn đề khi không dùng intefaces là khi có 2 types khác nhau, mà có cùng chung
+các hàm receiver func, thì khi thao tác sẽ bị trùng lập và Go ko cho phép --> dùng interfaces
+- Trong ví dụ hàm main.go thì type bot interface tạo ra 1 type bot mới, thay vì
+eng hay spanish
+- trong type bot có định nghĩa func getGreeting thì ở đây có nghĩa là nếu 1 type nào đó
+trong main có func này và trả về string thì là 1 member của type bot
+- Vậy lúc này engBot và spanishBot trở thành 1 member của bot nên khi dùng hàm printGreeting
+input đầu vào type bot thì engBot vs spanishBot cũng dc chấp nhận
+- Interface type thì ko tạo 1 giá trị được

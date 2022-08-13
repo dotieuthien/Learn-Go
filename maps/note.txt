@@ -1,0 +1,7 @@
+- Maps trong Go cũng giống như dict trong python
+- make là build in function trong Go để create a new map
+- Điểm khác nhau giữa struct và map:
++ Tất cả key trong map phải cùng 1 type, và tất cả value cũng vậy do map[string]string
++ Còn trong struct thì ko cần, value tring struct có thể nhiều type khác nhau
++ Trong map có thể iterate được
++ Map là reference type --> không cần dùng pointer
