@@ -7,7 +7,7 @@
 + go test
 
 - Có hai loại packages: executable vs reusable (library)
-- Package mà để exe là package main và bên trong phải có hàm func main()
+- Package mà để thực thi là package main và bên trong phải có hàm func main()
 
 - var name_of_variable type
 - basic Go types: bool, string, int, float64

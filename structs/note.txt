@@ -19,7 +19,7 @@ là lấy pointer của jim truyền vào và lúc đó thao tác với p cũng 
 
 - Tuy nhiên khi dùng slice cho trường hợp thay đổi giá trị của elem bên trong thì
 vẫn hoạt động mà ko cần pointer ops
-+ vì slice khi được tạo ra,ở địa chỉ của slice,nó lưu địa chỉ của những phần tử
++ vì slice khi được tạo ra, ở địa chỉ của slice, nó lưu địa chỉ của những phần tử
 + dù có tạo ra 1 bản copy of slice thì nó vẫn trỏ tới đó
 --> nó gọi đó là reference types
 
