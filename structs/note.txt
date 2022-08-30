@@ -1,7 +1,7 @@
-- struct giong nhu dict trong python
+- struct giong nhu class trong python, mình có thể định nghĩa trước các thuộc tính mà mình cần có cho biến đó
 - jim := person{} --> jim được save vào 1 address trên RAM, ví dụ là 0001
-- khi chúng ta call jim.updateName("Jimmy") --> copy a person instance 
-và lưu ở 1 địa chỉ khác --> jim vẫn không thay đổi
+- khi chúng ta call jim.updateName("Jimmy") --> là đang copy a person instance 
+và lưu ở 1 địa chỉ khác --> jim vẫn không thay đổi các giá trị của thuộc tính
 
 - func (pointerToPerson *person)
 + *person này có nghĩa là giá trị tại pointer của person struct
